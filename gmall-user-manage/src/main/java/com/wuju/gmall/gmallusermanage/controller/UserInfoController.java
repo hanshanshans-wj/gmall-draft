@@ -12,6 +12,7 @@ import java.util.List;
 public class UserInfoController {
     @Autowired
     private UserInfoService userInfoService;
+    //查询全部
     @RequestMapping("findAll")
     public List<UserInfo> findAll(){
         List<UserInfo> all = userInfoService.findAll();
